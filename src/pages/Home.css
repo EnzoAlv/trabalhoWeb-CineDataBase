@@ -1,0 +1,83 @@
+/* Estilos gerais de página (podem ir para App.css ou index.css se preferir) */
+.page-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza */
+}
+
+.home-container h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #2c3e50; /* Azul escuro */
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.media-grid {
+  display: grid;
+  /* Colunas responsivas: mínimo 180px, máximo 1fr */
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px; /* Espaçamento maior */
+}
+
+.loading-message, .error-message, .info-message {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 30px 15px;
+  color: #7f8c8d; /* Cinza */
+}
+
+.error-message {
+  color: #e74c3c; /* Vermelho */
+  font-weight: 500;
+}
+
+.load-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.load-more-button {
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #3498db; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.load-more-button:hover {
+    background-color: #2980b9; /* Azul mais escuro */
+    transform: translateY(-2px);
+}
+
+.load-more-button:disabled {
+    background-color: #bdc3c7; /* Cinza quando desabilitado */
+    cursor: not-allowed;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .media-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    .home-container h2 {
+        font-size: 1.6rem;
+    }
+    .load-more-button, .loading-message, .error-message, .info-message {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+     .media-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 15px;
+    }
+}

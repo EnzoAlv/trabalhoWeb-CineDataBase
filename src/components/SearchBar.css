@@ -1,0 +1,60 @@
+.search-bar-form {
+  display: flex;
+  margin-bottom: 30px; /* Aumenta margem inferior */
+  gap: 10px;
+  max-width: 600px; /* Limita largura */
+  margin-left: auto; /* Centraliza */
+  margin-right: auto;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 12px 18px; /* Aumenta padding */
+  font-size: 1.1rem;
+  border: 1px solid #bdc3c7; /* Cinza mais suave */
+  border-radius: 25px; /* Bordas mais arredondadas */
+  outline: none; /* Remove outline padrão */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #3498db; /* Azul no focus */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); /* Sombra suave no focus */
+}
+
+.search-button {
+  padding: 12px 25px; /* Aumenta padding */
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #e74c3c; /* Vermelho */
+  color: white;
+  border: none;
+  border-radius: 25px; /* Bordas mais arredondadas */
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.search-button:hover {
+  background-color: #c0392b; /* Vermelho mais escuro */
+  transform: translateY(-1px); /* Pequeno efeito de elevação */
+}
+
+.search-button:active {
+    transform: translateY(0px); /* Retorna ao clicar */
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .search-bar-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .search-input, .search-button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+     .search-button {
+        padding: 10px 20px;
+    }
+}

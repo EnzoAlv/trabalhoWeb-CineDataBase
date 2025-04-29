@@ -1,0 +1,29 @@
+/* Remove margens e paddings padrões */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f4f7f6; /* Fundo geral levemente acinzentado */
+  color: #333;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Conteúdo principal abaixo do Header */
+.app-content {
+  padding-top: 60px; /* Ajuste conforme a altura exata do seu Header */
+  /* Adicione mais padding se necessário */
+}
+
+/* Estilos globais para links (opcional) */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2980b9;
+}

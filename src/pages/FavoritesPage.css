@@ -1,0 +1,24 @@
+.favorites-container h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  /* Reutiliza a classe .media-grid de Home.css se for igual */
+  /* Se precisar de estilos específicos, adicione aqui */
+  
+  .favorites-container .info-message {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 30px 15px;
+    color: #7f8c8d;
+  }
+  
+  @media (max-width: 768px) {
+      .favorites-container h2 {
+          font-size: 1.6rem;
+      }
+  }

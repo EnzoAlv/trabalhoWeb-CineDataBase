@@ -1,75 +1,91 @@
-<<<<<<< HEAD
-# trabalhoWeb-CineDataBase
-Site versionado para Web referente a um database sobre filmes e series
-=======
-# Getting Started with Create React App
+# CineInfo - Catálogo de Cinema Interativo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot Placeholder](link_para_seu_screenshot.png) Um aplicativo web responsivo construído com React para explorar filmes e séries de TV. Pesquise títulos, veja detalhes como sinopse, elenco, notas, assista a trailers e salve seus favoritos localmente!
 
-## Available Scripts
+**Acesse a aplicação online:** [Link para a Aplicação Hospedada] ---
 
-In the project directory, you can run:
+## ✨ Funcionalidades Principais
 
-### `npm start`
+* **Busca Abrangente:** Encontre filmes e séries de TV pelo nome.
+* **Filmes Populares:** Descubra os filmes mais populares do momento na página inicial.
+* **Página de Detalhes:** Clique em um filme ou série para ver informações completas, incluindo:
+    * Título, ano de lançamento, gêneros.
+    * Sinopse traduzida (pt-BR).
+    * Nota média dos usuários.
+    * Elenco principal.
+    * Número de temporadas e episódios (para séries).
+    * Poster e imagem de fundo (backdrop).
+* **Trailer no YouTube:** Assista ao trailer oficial diretamente na página de detalhes (quando disponível).
+* **Sistema de Favoritos:** Marque filmes e séries como favoritos ❤️.
+* **Página de Favoritos:** Veja todos os seus itens favoritados em uma página dedicada.
+* **Interface Responsiva:** Adapta-se a diferentes tamanhos de tela (desktop, tablet, mobile).
+* **Dados da API:** Utiliza a API do [The Movie Database (TMDB)](https://www.themoviedb.org/) para obter informações atualizadas.
+* **Paginação Infinita:** Carregue mais resultados de busca ou filmes populares conforme rola a página.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tecnologias Utilizadas
 
-### `npm test`
+* **[React](https://reactjs.org/):** Biblioteca JavaScript para construção de interfaces de usuário.
+* **[React Router](https://reactrouter.com/):** Para gerenciamento de rotas e navegação entre páginas.
+* **[Axios](https://axios-http.com/):** Cliente HTTP para fazer requisições à API do TMDB.
+* **[React Context API](https://reactjs.org/docs/context.html):** Para gerenciamento do estado global de favoritos.
+* **[LocalStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage):** Para persistir a lista de favoritos no navegador do usuário.
+* **[CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS):** Para estilização e design responsivo (sem frameworks CSS externos).
+* **[The Movie Database (TMDB) API](https://developer.themoviedb.org/docs):** Fonte dos dados sobre filmes e séries.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🔧 Como Executar Localmente
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Siga estas instruções para configurar e rodar o projeto em sua máquina.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Node.js:** Certifique-se de ter o Node.js instalado (versão 16 ou superior recomendada). Você pode baixá-lo [aqui](https://nodejs.org/).
+* **npm** ou **yarn:** Gerenciador de pacotes Node.js (geralmente vem com o Node.js).
 
-### `npm run eject`
+### Instalação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.  **Clone o Repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
+    cd nome-do-repositorio
+    ```
+    *(Substitua `seu-usuario/nome-do-repositorio` pelo URL real do seu repositório GitHub)*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.  **Instale as Dependências:**
+    Usando npm:
+    ```bash
+    npm install
+    ```
+    Ou usando yarn:
+    ```bash
+    yarn install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.  **Configure a Chave da API:**
+    * Você precisará de uma chave da API do [The Movie Database (TMDB)](https://www.themoviedb.org/settings/api). É gratuito se cadastrar.
+    * Abra o arquivo `src/services/api.js`.
+    * Encontre a linha:
+        ```javascript
+        const API_KEY = 'SUA_CHAVE_API_AQUI'; // Substitua pela sua chave real
+        ```
+    * Substitua `'SUA_CHAVE_API_AQUI'` pela sua chave da API do TMDB. **Importante:** Não comite sua chave API diretamente no repositório público por questões de segurança. Considere usar variáveis de ambiente (`.env`) para projetos mais sérios.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4.  **Inicie o Servidor de Desenvolvimento:**
+    Usando npm:
+    ```bash
+    npm start
+    ```
+    Ou usando yarn:
+    ```bash
+    yarn start
+    ```
 
-## Learn More
+5.  **Abra no Navegador:**
+    A aplicação deve abrir automaticamente em `http://localhost:3000` (ou outra porta, se a 3000 estiver ocupada).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> d86f163 (Primeiro Commit do Projeto)
+## 📂 Estrutura de Pastas

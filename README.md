@@ -89,5 +89,3 @@ Siga estas instruções para configurar e rodar o projeto em sua máquina.
     A aplicação deve abrir automaticamente em `http://localhost:3000` (ou outra porta, se a 3000 estiver ocupada).
 
 ---
-
-## 📂 Estrutura de Pastas

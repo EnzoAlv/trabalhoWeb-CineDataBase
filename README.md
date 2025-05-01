@@ -3,7 +3,7 @@
 ![image](https://github.com/user-attachments/assets/0709fa5f-73df-4dad-b599-7a317140706a)
  Um aplicativo web responsivo construído com React para explorar filmes e séries de TV. Pesquise títulos, veja detalhes como sinopse, elenco, notas, assista a trailers e salve seus favoritos localmente!
 
-**Acesse a aplicação online:** [Link para a Aplicação Hospedada] ---
+**Acesse a aplicação online:** (https://trabalho-web-cine-data-base.vercel.app) ---
 
 ## ✨ Funcionalidades Principais
 
